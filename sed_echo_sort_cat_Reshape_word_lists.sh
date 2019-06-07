@@ -7,7 +7,7 @@
 sed -e 's/\, /\\n/g' my_utilites0.txt > my_utilites1.txt
 #
 # Step-2. reshape wordlist vertically as a column in console: Ctr^A text from my_utilites1.txt
-echo -e "chmod\ncd\ndate\ntest\ndiff\nat\nbanner\ncat\necho\nexit\nsort\nsudo\ngrep\nhostname\njobs\nkill\nless\nmkdir\nmktemp\npwd\nrm\nseq\ntail\nls\nman\ntee\ntouch\nw\nwc\nwhich\nwho\nwhoami\nmv\ncp\npaste\npg\nps\nhead"  > my_utilites2.txt
+echo -e "chmod\ncd\ndate\ntest\ndiff\nat\nbanner\ncat\necho\nexit\nsort\nsudo\ngrep\nhostname\njobs\nkill\nless\nmkdir\nmktemp\npwd\nrm\nsed\nseq\ntail\nls\nman\ntee\ntouch\nw\nwc\nwhich\nwho\nwhoami\nmv\ncp\npaste\npg\nps\nhead"  > my_utilites2.txt
 #
 # Step-3. Sort words alphabetically
 sort my_utilites2.txt > my_utilites3.txt

@@ -1,1 +1,1 @@
-chmod, cd, date, test, diff, at, banner, cat, echo, exit, sort, sudo, grep, hostname, jobs, kill, less, mkdir, mktemp, pwd, rm, seq, tail, ls, man, tee, touch, w, wc, which, who, whoami, mv, cp, paste, pg, ps, head
+chmod, cd, date, test, diff, at, banner, cat, echo, exit, sort, sudo, grep, hostname, jobs, kill, less, mkdir, mktemp, pwd, rm, sed, seq, tail, ls, man, tee, touch, w, wc, which, who, whoami, mv, cp, paste, pg, ps, head

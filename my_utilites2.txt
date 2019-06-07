@@ -19,6 +19,7 @@ mkdir
 mktemp
 pwd
 rm
+sed
 seq
 tail
 ls
