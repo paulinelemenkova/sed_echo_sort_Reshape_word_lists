@@ -1,0 +1,1 @@
+chmod\ncd\ndate\ntest\ndiff\nat\nbanner\ncat\necho\nexit\nsort\nsudo\ngrep\nhostname\njobs\nkill\nless\nmkdir\nmktemp\n\npwd\nrm\nseq\ntail\nls\nman\ntee\ntouch\nw\nwc\nwhich\nwho\nwhoami\nmv\ncp\npaste\npg\nps\nhead
