@@ -3,18 +3,14 @@
 # Initial file: my_utilites0.txt. Output file: my_utilites4.txt
 # Unix prog: cat, sed, echo, sort
 #
-# Step-1. replace commas after each word with empty spaces
-sed 's/\,//g' my_utilites0.txt > my_utilites1.txt
+# Step-1. replace comma+space after each word with \n to reshape wordlist vertically as a column
+sed -e 's/\, /\\n/g' my_utilites0.txt > my_utilites1.txt
 #
-# Step-2. replace space with \n (new line) to replace them vertically (in a column)
+# Step-2. use echo {\n} to reshape text from row: Ctr^A text from file my_utilites2.txt
+echo -e "chmod\ncd\ndate\ntest\ndiff\nat\nbanner\ncat\necho\nexit\nsort\nsudo\ngrep\nhostname\njobs\nkill\nless\nmkdir\nmktemp\npwd\nrm\nseq\ntail\nls\nman\ntee\ntouch\nw\nwc\nwhich\nwho\nwhoami\nmv\ncp\npaste\npg\nps\nhead"  > my_utilites2.txt
 #
-sed 's/ /\\n/g' my_utilites1.txt > my_utilites2.txt
+# Step-3. Sort words alphabetically
+sort my_utilites2.txt > my_utilites3.txt
 #
-# Step-3. use echo {\n} to reshape text from row: Ctr^A text from file my_utilites2.txt
-echo -e "wc\nwhoami\nat\nbanner\ncat\nexit\ngrep\nhead\nhostname\njobs\nwhich\nwho\nkill\nless\nls\nman\nmkdir\nmktemp\nmv\npaste\npg\nps\npwd\nrm\nseq\nsort\nsudo\ntail\ntee\ntest\ntouch\nw\nchmod\ncd\ncp\ndate\ndiff\necho" > my_utilites3.txt
-#
-# Step-4. now sort words alphabetically
-sort my_utilites3.txt > my_utilites4.txt
-#
-# Step-5. look at file
-cat my_utilites4.txt
+# Step-4. Look at file
+cat my_utilites3.txt
