@@ -6,7 +6,7 @@
 # Step-1. replace comma+space after each word with \n to reshape wordlist vertically as a column
 sed -e 's/\, /\\n/g' my_utilites0.txt > my_utilites1.txt
 #
-# Step-2. use echo {\n} to reshape text from row: Ctr^A text from file my_utilites2.txt
+# Step-2. use echo {\n} to reshape wordlist in console: Ctr^A text from file my_utilites1.txt
 echo -e "chmod\ncd\ndate\ntest\ndiff\nat\nbanner\ncat\necho\nexit\nsort\nsudo\ngrep\nhostname\njobs\nkill\nless\nmkdir\nmktemp\npwd\nrm\nseq\ntail\nls\nman\ntee\ntouch\nw\nwc\nwhich\nwho\nwhoami\nmv\ncp\npaste\npg\nps\nhead"  > my_utilites2.txt
 #
 # Step-3. Sort words alphabetically
