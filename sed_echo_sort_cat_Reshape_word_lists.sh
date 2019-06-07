@@ -1,7 +1,7 @@
 #!/bin/sh
 # Purpose: 1. Reshape text written in a row with commas (like this: "word1, word2, word3,...") to single column with each word in a row. 2. Sort words alphabetically.
 # Initial file: my_utilites0.txt. Output file: my_utilites4.txt
-# Unix prog: cat, sed, echo, sort
+# Unix prog: sed, echo, sort, cat
 #
 # Step-1. replace comma+space after each word with \n to reshape wordlist vertically as a column
 sed -e 's/\, /\\n/g' my_utilites0.txt > my_utilites1.txt
